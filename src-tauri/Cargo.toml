@@ -1,0 +1,18 @@
+[package]
+name = "koda-wallet-desktop"
+version = "1.0.0"
+description = "Koda Wallet Desktop (Embedded WebView)"
+authors = ["Kobradag"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "1", features = [] }
+
+[dependencies]
+tauri = { version = "1", features = [] }
+tauri-plugin-window-state = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "v1" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
