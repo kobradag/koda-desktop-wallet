@@ -9,7 +9,7 @@ fn main()
     .plugin(tauri_plugin_window_state::Builder::default().build())
     .setup(|app| {
         let window = app.get_window("main").unwrap();
-        window.eval("window.location.replace('https://wallet.kobradag.online')");
+        window.eval("window.location.replace('https://wallet.k0bradag.com')");
         Ok(())
       })
       .run(tauri::generate_context!())
